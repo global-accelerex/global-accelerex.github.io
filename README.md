@@ -1,1 +1,0 @@
-# global-accelerex.github.io
