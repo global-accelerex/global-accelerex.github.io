@@ -287,6 +287,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../androidpos/mockapp/" class="md-nav__link">
+        Mock App
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -576,7 +590,9 @@
     }
 </code></pre></div>
 <h3 id="step-3-create-a-checkoutfragment-or-activity">Step 3: Create a CheckoutFragment or activity</h3>
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Kotlin</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Kotlin</label><label for="__tabbed_1_2">Java</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="nn">android.os.Bundle</span>
 <span class="k">import</span> <span class="nn">android.view.View</span>
 <span class="k">import</span> <span class="nn">android.widget.Toast</span>
@@ -602,7 +618,7 @@
 <span class="p">}</span>
 </code></pre></div>
 </div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Java</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="p">;</span>
 <span class="kn">import</span> <span class="nn">android.view.View</span><span class="p">;</span>
 
@@ -629,12 +645,15 @@
 </code></pre></div>
 </div>
 </div>
+</div>
 <h3 id="step-4-add-code-to-start-the-payment-flow-and-handle-result">Step 4: Add code to start the payment flow and handle result</h3>
 <ol>
 <li>Register for activity result. In this callback, you will receive the result for the payment/transaction processing.</li>
 <li>Implement the startCheckout method by adding code to build the payment request.</li>
 </ol>
-<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Kotlin</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Kotlin</label><label for="__tabbed_2_2">Java</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">CheckoutFragment</span> <span class="p">:</span> <span class="n">Fragment</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">layout</span><span class="p">.</span><span class="na">fragment_checkout</span><span class="p">)</span> <span class="p">{</span>
 
     <span class="c1">// Register the the payment result using activity results API</span>
@@ -686,7 +705,7 @@
 <span class="p">}</span>
 </code></pre></div>
 </div>
-<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Java</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">CheckoutFragment</span> <span class="kd">extends</span> <span class="n">Fragment</span> <span class="p">{</span>
     <span class="kd">public</span> <span class="nf">CheckoutFragment</span><span class="p">()</span> <span class="p">{</span>
         <span class="kd">super</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">layout</span><span class="p">.</span><span class="na">fragment_checkout</span><span class="p">);</span>
@@ -735,6 +754,7 @@
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
+</div>
 </div>
 </div>
 
